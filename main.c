@@ -32,7 +32,7 @@ int main()
         if (code == 2)
         {
             printf("\n");
-            
+
             if (index >= 1)
             {
                 index--;
@@ -49,19 +49,27 @@ int main()
                 scanf("%c", &x);
             }
         }
-            if (code == 3)
+        if (code == 3)
+        {
+
+            for (int i = 0; i < index; i++)
             {
-                /* code */
+                printf("第%d个敏感字符,%c\n", i + 1, arr[i]);
             }
-            if (code == 4)
-            {
-                /* code */
-            }
-            if (code == 5)
-            {
-                printf("回车退出\n");
-                break;
-            }
+            printf("回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
-        return 0;
+        if (code == 4)
+        {
+            /* code */
+        }
+        if (code == 5)
+        {
+            printf("回车退出\n");
+            break;
+        }
     }
+    return 0;
+}
