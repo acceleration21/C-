@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+int index = 0;
 int main()
 {
 while(1){
@@ -14,7 +14,16 @@ while(1){
     scanf("%d",&code);
     
     if (code == 1) {
-        /* code */
+        printf("输入要添加的字符:\n");
+        char m;
+        scanf("%c",&m);
+        scanf("%c",&m);
+        index++;
+
+        printf("回车继续\n");
+        char x;
+        scanf("%c",&x);
+        scanf("%c",&x);
     }
     if (code == 2) {
         /* code */
